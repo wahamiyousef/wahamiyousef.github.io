@@ -11,3 +11,10 @@
     justify-content: center;
     align-items: last baseline;
 }
+.footer { 
+    position: absolute; 
+    bottom: 0; 
+    left: 0; 
+    z-index: 10;
+    align-items: center;
+}
