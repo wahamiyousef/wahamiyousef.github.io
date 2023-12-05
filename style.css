@@ -1,10 +1,11 @@
 *{
-    margin: 10px;
+    margin: 0;
     padding: 0;
     font-family: 'poppins', sans-serif;
     box-sizing: border-box;
     /*background: linear-gradient(135deg, #432609, #a9756a);*/
     background: #141217;
+    /*color: #f5f4f6; */
     color: #f5f4f6;
 
     
@@ -16,49 +17,68 @@
     
 }
 .face{
-    width: 250px;
-    height: 250px;
+    width: 22em;
+    height: 22em;
     border-radius: 50%;
-}
-/*
-.text-name{
-    background-color: #ca9c6d;
-
-    background-image: linear-gradient(45deg, #ca9c6d 0%, #432609 50%);
+    user-select: none;
+    -webkit-user-drag: none;
 }
 
-.socials{
+.navbar {
+    margin: 0;
+    padding: 0;
+    color: #f5f4f6;
+    position: fixed;
+    overflow: auto;
+    height: 100%;
+    width: 15%;
+    justify-content: right;
+    margin-left: 85%;
+}
+.navbar a{
+    font-size: 1.2em;
+    text-decoration: none;
+    transition: .3s;
+    display: block;
     width: 100%;
+
+    padding: 8px 16px;
+    text-align: right;
+
+    
+}
+.navbar a:hover,
+.navbar a.active {
+    color: #432609;
+}
+
+.home {
+    margin: 10px;
+    padding: 0;
     height: 100vh;
     display: flex;
-    justify-content: center;
-    align-items: last baseline;
-}
-.footer { 
-    position: absolute; 
-    bottom: 0; 
-    left: 0; 
-    z-index: 10;
     align-items: center;
+    padding: 0 10%;
 }
-h2{
-    font-size: 72px;
+.home h3{
+    font-size: 1.8em;
 }
-.name{
-    background-color: #f5f4f6;
-    background-image: linear-gradient(0deg, #ca9c6d, #a9756a);
-    background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
+.home h1{
+    font-size: 4em;
+}
 
-
-    font-size: 72px;
-    font-family: 'Montserrat';
-    font-weight: 800;
-    background: -webkit-linear-gradient(0deg, #ca9c6d, #a9756a);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.about {
+    display: block;    
 }
-*/
+
+.projects {
+    display: inline-block;
+    width: 10em;
+    height: 10em;
+    background-color: #432609;
+    border-radius: 3px;
+    transition: .2s;
+}
+.projects:hover {
+    transform: scale(1.5);
+}
