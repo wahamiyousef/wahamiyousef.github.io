@@ -1,5 +1,7 @@
-# PersonalSite
+# Personal Portfolio
+My personal portfolio website
 
-i learn how to make cool website
-maybe react
-I USED GIT 
+## Things I've learned
+
+> HTML/CSS, JS
+> GitHub pages
