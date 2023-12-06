@@ -3,57 +3,74 @@
     padding: 0;
     font-family: 'poppins', sans-serif;
     box-sizing: border-box;
-    /*background: linear-gradient(135deg, #432609, #a9756a);*/
-    background: #141217;
-    /*color: #f5f4f6; */
-    color: #f5f4f6;
+    /*background: #141217;
+    color: #f5f4f6;*/
+    background: var(--background);
+    color: var(--text);
 
     
-    --text: #f5f4f6;
+    --text: #f1f0ef;
     --background: #141217;
-    --primary: #ca9c6d;
-    --secondary: #432609;
-    --accent: #a9756a;
+    --primary: #c1bdb0;
+    --secondary: #5f5945;
+    --accent: #a39978;
     
 }
 .face{
-    width: 22em;
-    height: 22em;
+    max-width: 30%;
+    height: auto;
     border-radius: 50%;
     user-select: none;
     -webkit-user-drag: none;
 }
 
+@media screen and (max-width: 700px){
+    .navbar{
+        display: none;
+        visibility: hidden;
+    }
+}
 .navbar {
-    margin: 0;
+    margin: 40px 40px 0;
     padding: 0;
-    color: #f5f4f6;
     position: fixed;
     overflow: auto;
     height: 100%;
-    width: 15%;
+    width: 14%;
     justify-content: right;
     margin-left: 85%;
 }
 .navbar a{
     font-size: 1.2em;
+    color: var(--secondary);
     text-decoration: none;
     transition: .3s;
     display: block;
     width: 100%;
+    font-weight: bold;
 
-    padding: 8px 16px;
+    padding: 5px;
+    margin-right: 3%;
     text-align: right;
-
-    
+    float: right;
 }
-.navbar a:hover,
+.navbar svg{
+    fill: var(--secondary);
+}
+.navbar .icons{
+    padding: 10% 0 0 10%;
+    display: inline-flex;
+    width: auto;
+}
+.navbar a:hover, svg:hover,
 .navbar a.active {
-    color: #432609;
+    transition: 0.3s;
+    color: var(--accent);
+    fill: var(--accent);
 }
 
 .home {
-    margin: 10px;
+    margin: 0;
     padding: 0;
     height: 100vh;
     display: flex;
@@ -75,7 +92,7 @@
     display: inline-block;
     width: 10em;
     height: 10em;
-    background-color: #432609;
+    background-color: var(--secondary);
     border-radius: 3px;
     transition: .2s;
 }
