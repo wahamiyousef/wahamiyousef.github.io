@@ -3,5 +3,5 @@ My personal portfolio website
 
 ## Things I've learned
 
-> HTML/CSS, JS
+> HTML/CSS, JS  
 > GitHub pages
