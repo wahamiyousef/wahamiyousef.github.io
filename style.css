@@ -39,6 +39,7 @@
     width: 14%;
     justify-content: right;
     margin-left: 85%;
+    /*background: transparent;*/
 }
 .navbar a{
     font-size: 1.2em;
@@ -87,6 +88,25 @@
 .about {
     display: block;    
 }
+.about-content{
+    display: flex;
+    max-width: 85%;
+    padding-top: 5%;
+}
+.about h1{
+    font-size: 1.8em;
+    text-align: center;
+}
+.about-pic{
+    padding: 0 50px 0 100px;
+    height: 600px;
+    width: auto;
+    margin: auto 0;
+    border-radius: 5%;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
 
 .projects {
     display: inline-block;
