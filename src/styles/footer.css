@@ -1,0 +1,25 @@
+#footer {
+    position: relative;
+    min-height: 15vh;
+    padding-top: 20px;
+    margin: 0;
+    background: var(--darkBackground);
+    border-top: 1px solid grey  ;
+}
+#footer p {
+    background-color: var(--darkBackground);
+}
+
+/*
+#footer:after {
+    content: '';
+    display: block;
+    width: 80%;
+    height: 2px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: aqua;
+    border: 1px solid black;
+}
+*/

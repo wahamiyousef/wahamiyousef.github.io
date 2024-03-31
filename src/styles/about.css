@@ -1,0 +1,38 @@
+/* ABOUT SECTION */
+#about {
+    display: block;   
+    min-height: 50vh;
+    max-height: 1200px;
+    padding-bottom: 20vh;
+}
+
+.about-content{
+    display: flex;
+    max-width: 85%;
+    padding-top: 5%;
+    flex-direction: row;
+}
+#about h1{
+    font-size: 1.8em;
+    text-align: center;
+    padding-top: 25px;
+}
+.about-pic{
+    padding: 0 0 0 100px;
+    height: 600px;
+    width: auto;
+    margin: auto 0;
+    border-radius: 5%;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+.about-text{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    padding: 0 5%;
+    font-size: 1.17em;
+}
+.about-text a {
+    padding-top: 20px;
+}
