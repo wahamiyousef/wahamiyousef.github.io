@@ -1,0 +1,9 @@
+#contact{
+    min-height: 50vh;
+}
+#contact p {
+    padding: 20px;
+}
+#contact h1 {
+    padding-top: 10vh;
+}
