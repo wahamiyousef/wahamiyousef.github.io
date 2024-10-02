@@ -36,3 +36,32 @@
     transform: rotate(360deg);
   }
 }
+
+
+.background {
+  position: absolute;
+  z-index: -1;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  pointer-events: none;
+}
+.aboutText {
+  width: 85%;
+  padding: 0 7.5% 0 7.5%;
+  color: var(--text);
+  text-decoration: none;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+.techStack li {
+  list-style-type: none;
+  text-align: left;
+}
+.techStack li::before {
+  content: "▹    "
+}
