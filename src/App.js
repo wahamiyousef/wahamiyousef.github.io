@@ -3,10 +3,10 @@ import './App.css';
 
 function App() {
   return (
-    <div>
+    <div className=''>
       <div className='background'>
-        <img src="" style={{height: '800px'}}/>
-      </div>
+        <img src="../assets/blob2.png" style={{height: '800px'}}/>
+      </div> 
       <div>
         <div className='home'>
           <h1>Yousef Al-Wahami</h1>
