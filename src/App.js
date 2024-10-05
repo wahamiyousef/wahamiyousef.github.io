@@ -1,15 +1,36 @@
 import logo from './logo.svg';
 import './App.css';
+import './MeteorEffect.css'
+// import MeteorEffect from './MeteorEffect';
 
 function App() {
   return (
     <div className=''>
       <div className='background'>
+        <span 
+          className="meteor" 
+          style={{
+            top: '0px', 
+            left: '136px', 
+            animationDelay: '0.208s', 
+            animationDuration: '3s'
+          }}
+        ></span>
+        <span 
+          className="meteor" 
+          style={{
+            top: '100px', 
+            left: '50px', 
+            animationDelay: '1s', 
+            animationDuration: '10s'
+          }}
+        ></span>
         <img src="../assets/blob2.png" style={{height: '800px'}}/>
       </div> 
       <div>
         <div className='home'>
           <h1>Yousef Al-Wahami</h1>
+          <h4 className='location'>Ontario, Canada</h4>
         </div>
 
         <div className='about'>
