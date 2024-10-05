@@ -5,7 +5,7 @@ import './MeteorEffect.css'
 
 function App() {
   return (
-    <div className=''>
+    <div className='page'>
       <div className='background'>
         <span 
           className="meteor" 
@@ -29,8 +29,17 @@ function App() {
       </div> 
       <div>
         <div className='home'>
+          <h1>Hello I'm</h1>
           <h1>Yousef Al-Wahami</h1>
-          <h4 className='location'>Ontario, Canada</h4>
+          <h2>A Software Engineer</h2>
+          <div style={{display: 'flex', flexDirection: 'row', alignItems: 'center'}}>
+            <div className="circle-container">
+              <div className="inner-circle"></div>
+              <div className="pulsating-circle"></div>
+            </div>
+            <h4>Ontario, Canada</h4>
+          </div>
+          
         </div>
 
         <div className='about'>

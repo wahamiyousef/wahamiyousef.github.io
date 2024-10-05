@@ -1,45 +1,15 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 
 body {
-  background-color: black;
+  background-color: #121212;
+  color: white;
+}
+.page {
+  display: flex;
+  justify-content: center;
 }
 
 
@@ -54,7 +24,7 @@ body {
 }
 
 .location::before {
-  content: "▹    ";
+  content: "⚲    ";
   color: white;
 }
 
@@ -93,4 +63,42 @@ h1, p, li {
 
 .aboutText {
   color: white;
+}
+
+.circle-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 50px;
+  height: 50px;
+}
+.pulsating-circle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: rgba(0, 255, 0, 1); /* Green color */
+  border-radius: 50%;
+  animation: pulse 2s infinite;
+}
+.inner-circle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: rgb(8, 56, 8); /* Darker green */
+  border-radius: 50%;
+}
+
+/* Define the animation */
+@keyframes pulse {
+  0% {
+    transform: scale(1); /* Start at normal size */
+    background-color: rgba(0, 255, 0, 1); /* Fully opaque green */
+
+  }
+  100% {
+    transform: scale(2); /* Grow by 50% */
+    background-color: rgba(0, 255, 0, 0); /* 50% transparent */
+  }
+
 }
