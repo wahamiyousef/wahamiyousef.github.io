@@ -4,8 +4,10 @@
 }
 
 body {
-  background-color: #121212;
+  background-color: #121212; 
+  /* background: linear-gradient(to top right, black 0%, #3e1621) 100%; */
   color: white;
+  height: 100vh;
 }
 .page {
   display: flex;
@@ -63,4 +65,12 @@ h1, p, li {
 
 .aboutText {
   color: white;
+}
+
+.home {
+  background-color: rgba(25, 25, 25, 0.4);
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  border: 2px solid #121212;
+  border-radius: 5px;
 }
