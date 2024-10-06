@@ -1,0 +1,37 @@
+.circle-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 50px;
+  height: 50px;
+}
+.pulsating-circle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: rgba(0, 255, 0, 1); /* Green color */
+  border-radius: 50%;
+  animation: pulse 2s infinite;
+}
+.inner-circle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: rgb(8, 56, 8); /* Darker green */
+  border-radius: 50%;
+}
+
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    background-color: rgba(0, 255, 0, 1);
+
+  }
+  100% {
+    transform: scale(2);
+    background-color: rgba(0, 255, 0, 0);
+  }
+
+}
