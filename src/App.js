@@ -1,7 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
-import './MeteorEffect.css'
-// import MeteorEffect from './MeteorEffect';
+import './styles/meteor.css'
+import './styles/location.css'
+import Github from './assets/github.svg'
+import Linkedin from './assets/linkedin.svg'
+import Email from './assets/email.svg'
 
 function App() {
   return (
@@ -38,6 +41,7 @@ function App() {
               <div className="pulsating-circle"></div>
             </div>
             <h4>Ontario, Canada</h4>
+            <h4>Github, Linkedin, Email</h4>
           </div>
           
         </div>
