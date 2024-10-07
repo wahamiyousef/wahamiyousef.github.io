@@ -10,6 +10,8 @@ import nodejs from './assets/nodejs.svg'
 import ts from './assets/typescript.svg'
 import py from './assets/python.svg'
 import java from './assets/java.svg'
+import cpp from './assets/cpp.svg'
+import js from'./assets/javascript.svg'
 import Card from './components/Card';
 
 function App() {
@@ -50,13 +52,20 @@ function App() {
             <h4>Github, Linkedin, Email</h4>
           </div>
           <h2>My Tech Stack</h2>
-          <div style={{display: 'flex', gap: '10px'}}>
-            <Card photo={nodejs}>NodeJs</Card>
+          <div className='techStack'
+          style={{
+            display: 'grid', gridTemplateColumns: '142px 142px 142px 142px',
+            gap: '10px', margin: '10px'
+          }}>
             <Card photo={ts}>TypeScript</Card>
             <Card photo={py}>Python</Card>
+            <Card photo={nodejs}>Node.js</Card>
             <Card photo={java}>Java</Card>
+            <Card photo={cpp}>C/C++</Card>
+            <Card photo={js}>JavaScript</Card>
           </div>
-          
+          <h2 style={{marginTop: '20px'}}>Socials</h2>
+          <h4>Github, Linkedin, Email</h4>
         </div>
 
         <div className='about'>
