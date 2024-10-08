@@ -12,6 +12,7 @@ import py from './assets/python.svg'
 import java from './assets/java.svg'
 import cpp from './assets/cpp.svg'
 import js from'./assets/javascript.svg'
+import blaise from'./assets/blaise.png'
 import Card from './components/Card';
 import Exp from './components/Exp';
 
@@ -83,8 +84,8 @@ function App() {
         </div>
 
         <div id='experience' className='card'>
-          <h1>Experience</h1>
-          <Exp photo={js} time='Fall 2024' position='Backend Developer Intern' company='Blaise Transit' />
+          <h1 style={{marginBottom: '20px'}}>Experience</h1>
+          <Exp photo={blaise} time='Fall 2024' position='Backend Developer Intern' company='Blaise Transit' />
           <Exp photo={js} time='Summer 2025' position='Software Engineer Intern' company='Company' />
         </div>
 
