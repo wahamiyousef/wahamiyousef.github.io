@@ -11,11 +11,12 @@ const Exp = ({ children, photo, time, company, position }) => {
     textDecoration: 'none',
     borderRadius: '4px',
     fontSize: '18px',
-    fontWeight: '600',
+    fontWeight: '500',
     cursor: 'default',
-
+    // margin: '10px 0 10px 0',
+    margin: '1rem 0 1rem 0',
     backgroundColor: hover ? '#141414' : '#1E1E1E',
-    backgroundColor: hover ? 'rgba(255, 255, 255, 0.1)' : '#1E1E1E',
+    backgroundColor: hover ? 'rgba(255, 255, 255, 0.1)' : 'rgba(50, 50, 50, 0.1)',
     backdropFilter: hover ? 'blur(10px)' : 'none',
     transform: hover ? 'translateY(-5px)' : 'translateY(0px)',
     color: '#DDDDDD',
@@ -61,11 +62,11 @@ const Exp = ({ children, photo, time, company, position }) => {
           display: 'flex',
           justifyContent: 'center',
           alignItems: 'center',
-          gap: '4px'
+          gap: '8px'
         }}>
-        <img src={photo} style={{height: '27px'}}/>
+        <img src={photo} style={{height: '35px'}}/>
         <div style={{display: 'flex', flexDirection: 'column'}}>
-          <span>{position}</span>
+          <span style={{fontWeight: '700',}}>{position}</span>
           <span>{company}</span>
         </div>
       </div>
