@@ -33,22 +33,24 @@ const Exp = ({ children, photo, time, company, position }) => {
     maxHeight: isOpen ? '200px' : '0',
     overflow: 'hidden',
     transition: 'max-height 300ms ease-in-out',
-    backgroundColor: '#333', 
+    backgroundColor: '#333',
     borderRadius: '4px',
     marginTop: '10px',
-    padding: isOpen ? '10px' : '0', // Only apply padding when open
+    padding: isOpen ? '10px' : '0',
   };
+
+  const isList = Array.isArray(children);
 
   return (
     <>
       {/* Clickable Exp Div */}
-      <div 
+      <div
         onMouseEnter={() => setHover(true)}
         onMouseLeave={() => setHover(false)}
         onClick={toggleDrawer}
         style={expStyles}
       >
-        <div 
+        <div
           style={{
             display: 'flex',
             justifyContent: 'center',
@@ -68,7 +70,15 @@ const Exp = ({ children, photo, time, company, position }) => {
       <div style={{ ...drawerStyles }}>
         {isOpen && (
           <div style={{ padding: '10px' }}>
-            {children}
+            {isList ? (
+              <ul>
+                {children.map((child, index) => (
+                  <li key={index} style={{ marginBottom: '5px' }}>{child}</li>
+                ))}
+              </ul>
+            ) : (
+              <div>{children}</div>
+            )}
           </div>
         )}
       </div>

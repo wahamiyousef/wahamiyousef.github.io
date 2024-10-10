@@ -90,6 +90,14 @@ function App() {
           <Exp photo={blaise} time='Fall 2024' position='Backend Developer Intern' company='Blaise Transit'>
             <p></p>
           </Exp>
+          <Exp photo="/path/to/photo.png" time="Jan 2022 - Present" company="ABC Corp" position="Software Engineer">
+            {[
+              "Item 1",
+              "Item 2",
+              "Item 3"
+            ]}
+          </Exp>
+
           <Exp photo={js} time='Summer 2025' position='Software Engineer Intern' company='Company' />
         </div>
 
