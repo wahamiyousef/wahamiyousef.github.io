@@ -84,8 +84,12 @@ function App() {
         </div>
 
         <div id='experience' className='card'>
-          <h1 style={{marginBottom: '20px'}}>Experience</h1>
-          <Exp photo={blaise} time='Fall 2024' position='Backend Developer Intern' company='Blaise Transit' />
+          <div class='exp-title'>
+            <h1 style={{marginBottom: '20px'}}>Experience</h1><h5>(Click on company for more info)</h5>
+          </div>
+          <Exp photo={blaise} time='Fall 2024' position='Backend Developer Intern' company='Blaise Transit'>
+            <p></p>
+          </Exp>
           <Exp photo={js} time='Summer 2025' position='Software Engineer Intern' company='Company' />
         </div>
 
