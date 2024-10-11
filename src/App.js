@@ -38,7 +38,9 @@ function App() {
             animationDuration: '10s'
           }}
         ></span>
-        <img src={Blob} style={{height: '800px'}}/>
+        {/* <img src={Blob} style={{height: '800px'}}/> 
+        #98a869 sage green 
+        013f26 dark green*/}
       </div> 
       <div>
         <div id='home' className='card'>
