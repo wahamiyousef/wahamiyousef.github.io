@@ -5,7 +5,7 @@ import './styles/location.css'
 import Github from './assets/github.svg'
 import Linkedin from './assets/linkedin.svg'
 import Email from './assets/email.svg'
-import Blob from './assets/blob2.png'
+import Blob from './assets/blob7.png'
 import nodejs from './assets/nodejs.svg'
 import ts from './assets/typescript.svg'
 import py from './assets/python.svg'
@@ -38,6 +38,7 @@ function App() {
             animationDuration: '10s'
           }}
         ></span>
+        <img src={Blob} style={{height: '800px'}}/> 
         {/* <img src={Blob} style={{height: '800px'}}/> 
         #98a869 sage green 
         013f26 dark green*/}
