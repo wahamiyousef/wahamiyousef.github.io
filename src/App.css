@@ -75,7 +75,7 @@ h1, p, li {
 
 .card {
   background-color: rgba(25, 25, 25, 0.4);
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(1px);
   padding: 20px;
   border: 2px solid #121212;
   border-radius: 5px;
