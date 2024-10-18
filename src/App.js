@@ -45,31 +45,33 @@ function App() {
       </div> 
       <div>
         <div id='home' className='card'>
-          <h1>Hello I'm</h1>
-          <h1>Yousef Al-Wahami</h1>
-          <h2>A Software Engineer</h2>
-          <div style={{display: 'flex', flexDirection: 'row', alignItems: 'center'}}>
-            <div className="circle-container">
-              <div className="inner-circle"></div>
-              <div className="pulsating-circle"></div>
+          <div style={{padding: '20px'}}>
+            <h1>Hello I'm</h1>
+            <h1>Yousef Al-Wahami</h1>
+            <h2>A Software Engineer</h2>
+            <div style={{display: 'flex', flexDirection: 'row', alignItems: 'center', padding: '20px'}}>
+              <div className="circle-container">
+                <div className="inner-circle"></div>
+                <div className="pulsating-circle"></div>
+              </div>
+              <h4>Ontario, Canada</h4>
             </div>
-            <h4>Ontario, Canada</h4>
+            <h2>My Tech Stack</h2>
+            <div className='techStack'
+            style={{
+              display: 'grid', gridTemplateColumns: '142px 142px 142px 142px',
+              gap: '10px', margin: '10px'
+            }}>
+              <Card variant='tech' photo={ts}>TypeScript</Card>
+              <Card variant='tech' photo={py}>Python</Card>
+              <Card variant='tech' photo={nodejs}>Node.js</Card>
+              <Card variant='tech' photo={java}>Java</Card>
+              <Card variant='tech' photo={cpp}>C/C++</Card>
+              <Card variant='tech' photo={js}>JavaScript</Card>
+            </div>
+            <h2 style={{marginTop: '20px'}}>Socials</h2>
+            <h4>Github, Linkedin, Email</h4>
           </div>
-          <h2>My Tech Stack</h2>
-          <div className='techStack'
-          style={{
-            display: 'grid', gridTemplateColumns: '142px 142px 142px 142px',
-            gap: '10px', margin: '10px'
-          }}>
-            <Card variant='tech' photo={ts}>TypeScript</Card>
-            <Card variant='tech' photo={py}>Python</Card>
-            <Card variant='tech' photo={nodejs}>Node.js</Card>
-            <Card variant='tech' photo={java}>Java</Card>
-            <Card variant='tech' photo={cpp}>C/C++</Card>
-            <Card variant='tech' photo={js}>JavaScript</Card>
-          </div>
-          <h2 style={{marginTop: '20px'}}>Socials</h2>
-          <h4>Github, Linkedin, Email</h4>
         </div>
 
         <div className='about'>
