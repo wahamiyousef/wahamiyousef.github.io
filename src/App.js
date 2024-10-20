@@ -44,12 +44,12 @@ function App() {
         013f26 dark green*/}
       </div> 
       <div>
-        <div id='home' className='card'>
+        <div id='home' className='card' style={{marginBottom: '150px'}}>
           <div style={{padding: '20px'}}>
             <h1>Hello I'm</h1>
             <h1>Yousef Al-Wahami</h1>
             <h2>A Software Engineer</h2>
-            <div style={{display: 'flex', flexDirection: 'row', alignItems: 'center', padding: '20px'}}>
+            <div style={{display: 'flex', flexDirection: 'row', alignItems: 'center', padding: '10px'}}>
               <div className="circle-container">
                 <div className="inner-circle"></div>
                 <div className="pulsating-circle"></div>
@@ -74,19 +74,6 @@ function App() {
           </div>
         </div>
 
-        <div className='about'>
-          <h1>About Me</h1>
-          <p>I am currently a student at the University of Windsor studying Computer Science.</p><br />
-          <p>Here are some technologies I work with:</p>
-          <ul className='techStack'>
-            <li>JavaScript</li>
-            <li>TypeScript</li>
-            <li>Node.js</li>
-            <li>Python</li>
-            <li>Java</li>
-            <li>C/C++</li>
-          </ul>
-        </div>
 
         <div id='experience' className='card'>
           <div class='exp-title'>
