@@ -34,6 +34,7 @@ const Exp = ({ children, photo, time, company, position }) => {
     overflow: 'hidden',
     transition: 'max-height 300ms ease-in-out',
     backgroundColor: '#333',
+    backgroundColor: 'rgba(255, 255, 255, 0.1)',
     borderRadius: '4px',
     marginTop: '10px',
     padding: isOpen ? '10px' : '0',
@@ -73,7 +74,7 @@ const Exp = ({ children, photo, time, company, position }) => {
             {isList ? (
               <ul>
                 {children.map((child, index) => (
-                  <li key={index} style={{ marginBottom: '5px' }}>{child}</li>
+                  <li key={index} style={{ marginBottom: '5px', marginLeft: '15px' }}>{child}</li>
                 ))}
               </ul>
             ) : (
