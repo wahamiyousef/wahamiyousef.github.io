@@ -12,34 +12,31 @@ import py from './assets/python.svg'
 import java from './assets/java.svg'
 import cpp from './assets/cpp.svg'
 import js from'./assets/javascript.svg'
+import mysql from './assets/mysql.png'
 import blaise from'./assets/blaise.png'
 import Card from './components/Card';
 import Exp from './components/Exp';
 import Button from './components/Button';
+import Meteor from './components/Meteor';
+
+const MeteorShower = () => {
+  const meteorCount = 10; // You can adjust the number of meteors
+
+  return (
+    <div className="meteor-container">
+      {Array.from({ length: meteorCount }).map((_, index) => (
+        <Meteor key={index} />
+      ))}
+    </div>
+  );
+};
 
 function App() {
   return (
     <div className='page' style={{paddingTop: '100px'}}>
-      <div className='background'>
-        <span 
-          className="meteor" 
-          style={{
-            top: '0px', 
-            left: '136px', 
-            animationDelay: '0.208s', 
-            animationDuration: '3s'
-          }}
-        ></span>
-        <span 
-          className="meteor" 
-          style={{
-            top: '100px', 
-            left: '50px', 
-            animationDelay: '1s', 
-            animationDuration: '10s'
-          }}
-        ></span>
+      <div className='background' style={{position: 'fixed',}}>
         <img src={Blob} style={{height: '800px'}}/> 
+        <MeteorShower />
         {/* <img src={Blob} style={{height: '800px'}}/> 
         #98a869 sage green 
         013f26 dark green*/}
@@ -76,6 +73,7 @@ function App() {
                 <Card variant='tech' photo={java}>Java</Card>
                 <Card variant='tech' photo={cpp}>C/C++</Card>
                 <Card variant='tech' photo={js}>JavaScript</Card>
+                <Card variant='tech' photo={mysql}>MySQL</Card>
               </div>
             </div>
 
@@ -86,19 +84,23 @@ function App() {
               gap: '10px', margin: '10px'
             }}>
               <Button target="_blank" link='https://www.github.com/wahamiyousef' photo={Github} variant='socials'></Button>
-              <Button target="_blank" link='https://www.linkedin.com/yousef-alwahami' photo={Linkedin} variant='socials'></Button>
+              <Button target="_blank" link='https://www.linkedin.com/in/yousef-al-wahami/' photo={Linkedin} variant='socials'></Button>
               <Button target="_blank" link='mailto:alwahami.yousef@gmail.com' photo={Email} variant='socials'></Button>
             </div>
           </div>
         </div>
 
 
-        <div id='experience' className='card'>
+        <div id='experience' className='card' style={{marginBottom: '150px'}}>
           <div class='exp-title'>
             <h1 style={{marginBottom: '20px'}}>Experience</h1><h5>(Click on company for more info)</h5>
           </div>
           <Exp photo={blaise} time='Fall 2024' position='Backend Developer Intern' company='Blaise Transit'>
-            <p></p>
+            {[
+              "Used jest to unit test with high coverage of over 85%",
+              "Item 2",
+              "Item 3"
+            ]}
           </Exp>
           <Exp photo="/path/to/photo.png" time="Jan 2022 - Present" company="ABC Corp" position="Software Engineer">
             {[
@@ -111,7 +113,7 @@ function App() {
           <Exp photo={js} time='Summer 2025' position='Software Engineer Intern' company='Company' />
         </div>
 
-        <div className='projects'>
+        <div id='projects' className='card'>
           <h1>Projects</h1>
         </div>
         
