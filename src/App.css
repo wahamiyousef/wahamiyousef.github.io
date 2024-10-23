@@ -90,3 +90,25 @@ h1, p, li {
 .exp-title h5{
   font-weight: 400;
 }
+
+.scrollable-content::-webkit-scrollbar {
+  width: 9px;
+	background-color: #F5F5F5;
+}
+
+.scrollable-content::-webkit-scrollbar-track {
+  /* background: #c3c3c3; */
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+.scrollable-content::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #4A5568;
+}
+
+.scrollable-content::-webkit-scrollbar-thumb:hover {
+  background: #718096;
+}
