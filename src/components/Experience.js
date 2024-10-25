@@ -5,7 +5,7 @@ import js from'../assets/javascript.svg'
 
 function Experience() {
   return (
-    <div id='experience' className='card' style={{marginBottom: '150px'}}>
+    <div id='experience'  style={{marginBottom: '50px'}}>
       <div class='exp-title'>
         <h1 style={{marginBottom: '20px'}}>Experience</h1><h5>(Click on company for more info)</h5>
       </div>

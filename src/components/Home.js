@@ -14,7 +14,7 @@ import mysql from '../assets/mysql.png'
 
 function Home() {
   return (
-    <div id='home' className='card' style={{marginBottom: '150px'}}>
+    <div id='home' style={{marginBottom: '150px'}}>
       <div style={{padding: '20px'}}>
         <div style={{display: 'flex', justifyContent: 'space-between', paddingBottom: '50px'}}>
           <div>

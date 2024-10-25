@@ -45,17 +45,21 @@ function App() {
       </div> 
       <div style={{display: 'flex', height: '80vh', justifyContent: 'space-between', width: '100vw'}}>
 
-        <div style={{position: 'sticky', top: '0', height: '80vh', overflow: 'hidden' , minWidth: '700px',}}>
+        <div style={{paddingTop: '96px', position: 'sticky', top: '0', height: '80vh', overflow: 'hidden' , minWidth: '700px',}}>
           <Home />
         </div>
         
-        <div className='scrollable-content' style={{  width: '50%', overflowY: 'scroll', height: '100vh' }}>
-          <Experience />
-          <Experience />
-          <Experience />
-          <div id='projects' className='card'>
-            <h1>Projects</h1>
+        <div className='scrollable-content' style={{ paddingTop: '96px', width: '50%', overflowY: 'scroll', height: '100vh' }}>
+          <div className='card'>
+            <Experience />
+            <Experience />
+            <Experience />
+            <div id='projects' className='card'>
+              <h1>Projects</h1>
+            </div>
           </div>
+            
+            
         </div>
 
       </div>
