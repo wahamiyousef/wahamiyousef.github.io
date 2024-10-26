@@ -43,23 +43,25 @@ function App() {
         #98a869 sage green 
         013f26 dark green*/}
       </div> 
-      <div style={{display: 'flex', height: '80vh', justifyContent: 'space-between', width: '100vw'}}>
+      <div style={{ marginLeft: 'auto', marginRight: 'auto', gap: '4px', width: '100vw'}}> {/* display: 'flex',  justifyContent: 'space-between', height: '80vh',paddingTop: '96px' */}
 
-        <div style={{paddingTop: '96px', position: 'sticky', top: '0', height: '80vh', overflow: 'hidden' , minWidth: '700px',}}>
-          <Home />
-        </div>
-        
-        <div className='scrollable-content' style={{ paddingTop: '96px', width: '628px', overflowY: 'scroll', height: '100vh' }}>
-          <div className='card'>
-            <Experience />
-            <Experience />
-            <Experience />
-            <div id='projects' className='card'>
-              <h1>Projects</h1>
+        <div style={{display: 'flex', justifyContent: 'center', gap:' 1rem'}}>
+          
+          <div style={{position: 'sticky', top: '0', minWidth: '700px', maxHeight: '100vh'}}>
+            <Home />
+          </div>
+          
+          <div style={{width: '628px'}}>
+            <div>
+              <Experience />
+              <Experience />
+              <Experience />
+              <div id='projects' className='card'>
+                <h1>Projects</h1>
+              </div>
             </div>
           </div>
-            
-            
+
         </div>
 
       </div>
