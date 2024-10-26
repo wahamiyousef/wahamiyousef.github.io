@@ -49,7 +49,7 @@ function App() {
           <Home />
         </div>
         
-        <div className='scrollable-content' style={{ paddingTop: '96px', width: '50%', overflowY: 'scroll', height: '100vh' }}>
+        <div className='scrollable-content' style={{ paddingTop: '96px', width: '628px', overflowY: 'scroll', height: '100vh' }}>
           <div className='card'>
             <Experience />
             <Experience />
