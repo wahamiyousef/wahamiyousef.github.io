@@ -20,6 +20,7 @@ import Button from './components/Button';
 import Meteor from './components/Meteor';
 import Home from './components/Home';
 import Experience from './components/Experience';
+import Projects from './components/Projects';
 
 const MeteorShower = () => {
   const meteorCount = 10;
@@ -56,9 +57,7 @@ function App() {
               <Experience />
               <Experience />
               <Experience />
-              <div id='projects' className='card'>
-                <h1>Projects</h1>
-              </div>
+              <Projects />
             </div>
           </div>
 
