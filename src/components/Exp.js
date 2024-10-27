@@ -20,7 +20,7 @@ const Exp = ({ children, photo, time, company, position }) => {
     cursor: 'pointer',
     margin: '1rem 0',
     backgroundColor: hover ? '#141414' : '#1E1E1E',
-    backgroundColor: hover ? 'rgba(255, 255, 255, 0.1)' : 'rgba(50, 50, 50, 0.1)',
+    backgroundColor: hover ? 'rgba(255, 255, 255, 0.1)' : 'rgba(50, 50, 50, 0.3)',
     backdropFilter: hover ? 'blur(10px)' : 'none',
     transform: hover ? 'translateY(-5px)' : 'translateY(0px)',
     color: '#DDDDDD',

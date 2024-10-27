@@ -46,13 +46,13 @@ function App() {
       </div> 
       <div style={{ marginLeft: 'auto', marginRight: 'auto', gap: '4px', width: '100vw'}}> {/* display: 'flex',  justifyContent: 'space-between', height: '80vh',paddingTop: '96px' */}
 
-        <div style={{display: 'flex', justifyContent: 'center', gap:' 1rem'}}>
+        <div style={{display: 'flex', justifyContent: 'center', gap:' 1rem', }}>
           
-          <div style={{position: 'sticky', top: '0', minWidth: '700px', maxHeight: '100vh'}}>
+          <div style={{position: 'sticky', top: '0', minWidth: '700px', maxHeight: '90vh', paddingTop: '96px'}}>
             <Home />
           </div>
           
-          <div style={{width: '628px'}}>
+          <div style={{width: '628px', paddingTop: '96px'}}>
             <div>
               <Experience />
               <Experience />
