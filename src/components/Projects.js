@@ -4,7 +4,11 @@ function Projects() {
   return (
     <div id='projects' className='card'>
       <h1>Projects</h1>
-      <div></div>
+      <div>
+        <div>
+          
+        </div>
+      </div>
     </div>
   )
 }
