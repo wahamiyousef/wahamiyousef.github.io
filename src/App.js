@@ -58,6 +58,7 @@ function App() {
               <Experience />
               <Experience />
               <Projects />
+              <span style={{display: 'block', paddingBottom: '40px'}}></span>
             </div>
           </div>
 
