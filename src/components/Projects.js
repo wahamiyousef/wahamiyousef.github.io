@@ -1,39 +1,61 @@
 import React from 'react';
 import '../styles/projects.css'
+// import github from '../assets/github.svg'
+import { ReactComponent as Github } from '../assets/github.svg'
+import { ReactComponent as Link } from '../assets/externalLink.svg'
 
 function Projects() {
   const projects = [
     {
       id: 1,
-      title: 'Project One',
-      description: 'This is a description for Project One.',
-      link: 'https://example.com/project1',
+      title: 'ArabicScriptAI',
+      description: 'Scholarly open source web-app for learning how to write Arabic letters',
+      stack: "Python, JavaScript, Vercel, PocketBase, Tesseract OCR",
+      link: 'https://arabic-script-ai.vercel.app/',
+      github: 'https://github.com/wahamiyousef/ArabicScriptAI'
     },
     {
       id: 2,
-      title: 'Project Two',
-      description: 'This is a description for Project Two.',
-      link: 'https://example.com/project2',
+      title: 'Invade Tower Defense',
+      description: 'Tower Defense game using Java utilizing object-oriented programming (OOP), made for Grade 12 FSE',
+      stack: "Java, OOP",
+      link: "",
+      github: "https://github.com/wahamiyousef/Invade-Tower-Defense"
     },
     {
       id: 3,
-      title: 'Project Three',
-      description: 'This is a description for Project Three.',
-      link: 'https://example.com/project3',
+      title: 'Creaks',
+      description: 'Horror game developed for 2 week game jam with Unity using C#',
+      stack: 'Unity, Blender, Photoshop, FL Studio',
+      link: 'https://stuvs.itch.io/creaks',
     },
   ];
 
   return (
-    <div id='projects' className='div-card'>
+    <div id='projects' className='card'>
       <h1>Projects</h1>
       <div className='project-cards'>
         {projects.map((project) => (
           <div key={project.id} className='project-card'>
-            <h2>{project.title}</h2>
+            <div style={{display: 'flex', justifyContent: 'space-between'}}>
+              <h2>{project.title}</h2>
+              
+              <div style={{display: 'flex'}}>
+                {project.github && (
+                  <a href={project.github} target='_blank' rel='noopener noreferrer'>
+                    <Github />
+                  </a>
+                )}
+                {project.link && (
+                  <a href={project.link} target='_blank' rel='noopener noreferrer'>
+                    <Link />
+                  </a>
+                )}
+              </div>
+
+            </div>
+            
             <p>{project.description}</p>
-            <a href={project.link} target='_blank' rel='noopener noreferrer'>
-              View Project
-            </a>
           </div>
         ))}
       </div>
