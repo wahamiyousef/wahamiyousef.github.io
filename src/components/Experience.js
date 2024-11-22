@@ -11,9 +11,9 @@ function Experience() {
       </div>
       <Exp photo={blaise} time='Fall 2024' position='Backend Developer Intern' company='Blaise Transit'>
         {[
-          "Used jest to unit test with high coverage of over 85%",
-          "Item 2",
-          "Item 3"
+          "Startup providing on-demand transit solutions to enhance sustainability and accessibility in public transportation",
+          "Achieved over 85% high test coverage using Jest, ensuring robustness and reliability of backend systems",
+          "Managed CI/CD pipelines, version control, and task tracking using Azure DevOps while reviewing pull requests to ensure coding standards and optimize code quality",
         ]}
       </Exp>
       <Exp photo="/path/to/photo.png" time="Jan 2022 - Present" company="ABC Corp" position="Software Engineer">
