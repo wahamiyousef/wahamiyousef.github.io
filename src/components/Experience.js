@@ -6,7 +6,7 @@ import js from'../assets/javascript.svg'
 function Experience() {
   return (
     <div id='experience' className='card' style={{marginBottom: '50px'}}>
-      <div class='exp-title'>
+      <div className='exp-title'>
         <h1 style={{marginBottom: '20px'}}>Experience</h1><h5>(Click on company for more info)</h5>
       </div>
       <Exp photo={blaise} time='Fall 2024' position='Backend Developer Intern' company='Blaise Transit'>
