@@ -48,7 +48,7 @@ function App() {
 
         <div className='page-content'>
           
-          <div style={{position: 'sticky', top: '0', minWidth: '700px', height: '50vh', paddingTop: '96px'}}>
+          <div className='home-content'>
             <Home />
           </div>
           
