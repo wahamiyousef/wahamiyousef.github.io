@@ -1,0 +1,26 @@
+.techStack {
+  /*
+  style={{
+    display: 'grid', gridTemplateColumns: '142px 142px 142px 142px',
+    gap: '10px', margin: '10px'
+  }
+  */
+}
+
+.techStack {
+  display: grid;
+  grid-template-columns: 142px 142px 142px 142px;
+  gap: 10px;
+  margin: 10px;
+}
+.techStack li {
+  list-style-type: none;
+  text-align: left;
+}
+.techStack li::before {
+  content: "▹    "
+}
+.techStack li::before {
+  content: "▹    ";
+  color: white;
+}

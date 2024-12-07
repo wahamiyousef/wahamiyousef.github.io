@@ -11,6 +11,7 @@ import java from '../assets/java.svg'
 import cpp from '../assets/cpp.svg'
 import js from'../assets/javascript.svg'
 import mysql from '../assets/mysql.png'
+import '../styles/home.css'
 
 function Home() {
   return (
@@ -34,11 +35,7 @@ function Home() {
 
         <div style={{paddingBottom: '30px'}}>
           <h2>My Tech Stack</h2>
-          <div className='techStack'
-          style={{
-            display: 'grid', gridTemplateColumns: '142px 142px 142px 142px',
-            gap: '10px', margin: '10px'
-          }}>
+          <div className='techStack'>
             <Card variant='tech' photo={ts}>TypeScript</Card>
             <Card variant='tech' photo={py}>Python</Card>
             <Card variant='tech' photo={nodejs}>Node.js</Card>
