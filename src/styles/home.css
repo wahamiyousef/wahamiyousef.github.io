@@ -1,13 +1,4 @@
 .techStack {
-  /*
-  style={{
-    display: 'grid', gridTemplateColumns: '142px 142px 142px 142px',
-    gap: '10px', margin: '10px'
-  }
-  */
-}
-
-.techStack {
   display: grid;
   grid-template-columns: 142px 142px 142px 142px;
   gap: 10px;
@@ -23,4 +14,33 @@
 .techStack li::before {
   content: "▹    ";
   color: white;
+}
+
+.socials {
+  display: grid;
+  grid-template-columns: 50px 50px 50px;
+  gap: 10px;
+  margin: 10px;
+}
+
+@media (max-width: 600px) {
+  .techStack {
+    display: grid;
+    grid-template-columns: 320px 320px;
+    gap: 10px;
+    margin: 10px;
+    place-items: center;
+  }
+  .techStack div {
+    width: 250px !important;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+  }
+  .socials {
+    display: grid;
+    grid-template-columns: 50px 50px 50px;
+    gap: 10px;
+    margin: 10px;
+  }
 }

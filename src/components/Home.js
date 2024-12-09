@@ -47,11 +47,7 @@ function Home() {
         </div>
 
         <h2 style={{marginTop: '20px'}}>Socials</h2>
-        <div
-        style={{
-          display: 'grid', gridTemplateColumns: '50px 50px 50px',
-          gap: '10px', margin: '10px'
-        }}>
+        <div className='socials'>
           <Button target="_blank" link='https://www.github.com/wahamiyousef' photo={Github} variant='socials'></Button>
           <Button target="_blank" link='https://www.linkedin.com/in/yousef-al-wahami/' photo={Linkedin} variant='socials'></Button>
           <Button target="_blank" link='mailto:alwahami.yousef@gmail.com' photo={Email} variant='socials'></Button>
