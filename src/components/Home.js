@@ -11,6 +11,7 @@ import java from '../assets/java.svg'
 import cpp from '../assets/cpp.svg'
 import js from'../assets/javascript.svg'
 import mysql from '../assets/mysql.png'
+import resume from '../assets/yousefalwahami.pdf'
 import '../styles/home.css'
 
 function Home() {
@@ -32,6 +33,11 @@ function Home() {
             <h4>Ontario, Canada</h4>
           </div>
         </div>
+
+        <div style={{width: '200px'}}>
+          <Button link={resume} variant='resume'>View Resume</Button>
+        </div>
+        
 
         <div style={{paddingBottom: '30px'}}>
           <h2>My Tech Stack</h2>

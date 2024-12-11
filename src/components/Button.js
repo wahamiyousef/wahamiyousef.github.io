@@ -44,6 +44,14 @@ const Button = ({ children, link, onClick, variant = 'primary', photo, target })
       transform: hover ? 'translateY(-5px)' : 'translateY(0px)',
       transition: 'all 300ms',
       color: '#DDDDDD',
+      border: hover ? '1px solid #7C7C7C' : '1px solid #4C4C4C',
+    },
+    resume: {
+      backgroundColor: hover ? '#141414' : '#1E1E1E',
+      transition: 'all 300ms',
+      color: '#DDDDDD',
+      border: hover ? '1px solid #7C7C7C' : '1px solid #4C4C4C',
+      marginBottom: '20px',
     },
     invis: {
       backgroundColor: 'rgba(0,0,0,0)',
