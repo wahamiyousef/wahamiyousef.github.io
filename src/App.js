@@ -44,7 +44,7 @@ function App() {
         #98a869 sage green 
         013f26 dark green*/}
       </div> 
-      <div style={{ marginLeft: 'auto', marginRight: 'auto', gap: '4px', width: '100vw'}}> {/* display: 'flex',  justifyContent: 'space-between', height: '80vh',paddingTop: '96px' */}
+      <div className='main-page'> {/* display: 'flex',  justifyContent: 'space-between', height: '80vh',paddingTop: '96px' */}
 
         <div className='page-content'>
           
@@ -52,7 +52,7 @@ function App() {
             <Home />
           </div>
           
-          <div style={{width: '628px', paddingTop: '96px'}}>
+          <div className='info-content'>
             <div>
               <Experience />
               <Experience />

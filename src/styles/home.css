@@ -26,7 +26,7 @@
 @media (max-width: 600px) {
   .techStack {
     display: grid;
-    grid-template-columns: 320px 320px;
+    grid-template-columns: 640px;
     gap: 10px;
     margin: 10px;
     place-items: center;
