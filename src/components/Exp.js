@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
+import Default from '../assets/default.png';
 
-const Exp = ({ children, photo, time, company, position }) => {
+const Exp = ({ children, photo=Default, time, company, position }) => {
   const [hover, setHover] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
 
@@ -58,7 +59,7 @@ const Exp = ({ children, photo, time, company, position }) => {
             alignItems: 'center',
             gap: '8px'
           }}>
-          <img src={photo} style={{ height: '35px' }} alt="Company Logo" />
+          <img src={photo} style={{ height: '35px' }}/>
           <div style={{ display: 'flex', flexDirection: 'column' }}>
             <span style={{ fontWeight: '700' }}>{position}</span>
             <span>{company}</span>

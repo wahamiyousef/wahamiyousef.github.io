@@ -16,6 +16,13 @@ function Experience() {
           "Managed CI/CD pipelines, version control, and task tracking using Azure DevOps while reviewing pull requests to ensure coding standards and optimize code quality",
         ]}
       </Exp>
+      <Exp time='Winter 2024' position='Software Developer Intern' company='NextRipple'>
+        {[
+          "Developed a full-stack Task Management System for admin task assignment and status tracking using React.js, Node.js, Express.js, and MongoDB",
+          "Built and maintained RESTful APIs using Node.js and Express.js for efficient communication between the front-end and back-end",
+          "Utilized Mongoose to connect, query, and manage data in MongoDB"
+        ]}
+      </Exp>
       <Exp photo="/path/to/photo.png" time="Jan 2022 - Present" company="ABC Corp" position="Software Engineer">
         {[
           "Item 1",

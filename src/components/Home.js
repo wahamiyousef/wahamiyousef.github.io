@@ -35,7 +35,7 @@ function Home() {
         </div>
 
         <div style={{width: '200px'}}>
-          <Button link={resume} variant='resume'>View Resume</Button>
+          <Button link={resume} target="_blank" variant='resume'>View Resume</Button>
         </div>
         
 
