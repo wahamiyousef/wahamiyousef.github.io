@@ -38,7 +38,7 @@ function App() {
   return (
     <div className='page'> 
       <div className='background' style={{position: 'fixed', paddingTop: '100px'}}>
-        <img src={Blob} style={{height: '800px'}}/> 
+        <img src={Blob} className='background-img'/> 
         <MeteorShower />
         {/* <img src={Blob} style={{height: '800px'}}/> 
         #98a869 sage green 
