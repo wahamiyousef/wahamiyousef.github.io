@@ -1,7 +1,8 @@
 import React from 'react'
 import { useState } from 'react'
+import '../styles/techcard.css'
 
-const Card = ({ children, photo }) => {
+const TechCard = ({ children, photo }) => {
   const [hover, setHover] = useState(false);
 
   const defaultStyles = {
@@ -27,7 +28,8 @@ const Card = ({ children, photo }) => {
     <div
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
-      style={defaultStyles}
+      //style={defaultStyles}
+      className='techcard'
     >
       <img src={photo} style={{height: '27px'}}/>
       {children}
@@ -35,4 +37,4 @@ const Card = ({ children, photo }) => {
   );
 }
 
-export default Card
+export default TechCard

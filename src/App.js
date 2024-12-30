@@ -14,7 +14,7 @@ import cpp from './assets/cpp.svg'
 import js from'./assets/javascript.svg'
 import mysql from './assets/mysql.png'
 import blaise from'./assets/blaise.png'
-import Card from './components/Card';
+import Card from './components/TechCard';
 import Exp from './components/Exp';
 import Button from './components/Button';
 import Meteor from './components/Meteor';

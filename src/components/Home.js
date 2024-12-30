@@ -1,5 +1,5 @@
 import React from 'react'
-import Card from './Card'
+import TechCard from './TechCard'
 import Button from './Button'
 import Github from '../assets/github.svg'
 import Linkedin from '../assets/linkedin.svg'
@@ -42,13 +42,13 @@ function Home() {
         <div style={{paddingBottom: '30px'}}>
           <h2>My Tech Stack</h2>
           <div className='techStack'>
-            <Card variant='tech' photo={ts}>TypeScript</Card>
-            <Card variant='tech' photo={py}>Python</Card>
-            <Card variant='tech' photo={nodejs}>Node.js</Card>
-            <Card variant='tech' photo={java}>Java</Card>
-            <Card variant='tech' photo={cpp}>C/C++</Card>
-            <Card variant='tech' photo={js}>JavaScript</Card>
-            <Card variant='tech' photo={mysql}>MySQL</Card>
+            <TechCard variant='tech' photo={ts}>TypeScript</TechCard>
+            <TechCard variant='tech' photo={py}>Python</TechCard>
+            <TechCard variant='tech' photo={nodejs}>Node.js</TechCard>
+            <TechCard variant='tech' photo={java}>Java</TechCard>
+            <TechCard variant='tech' photo={cpp}>C/C++</TechCard>
+            <TechCard variant='tech' photo={js}>JavaScript</TechCard>
+            <TechCard variant='tech' photo={mysql}>MySQL</TechCard>
           </div>
         </div>
 
