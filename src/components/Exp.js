@@ -47,7 +47,7 @@ const Exp = ({ children, photo=Default, time, company, position }) => {
   };
 
   const drawerStyles = {
-    maxHeight: isOpen ? '200px' : '0',
+    //maxHeight: isOpen ? '200px' : '0',
     overflow: 'hidden',
     transition: 'max-height 300ms ease-in-out',
     backgroundColor: 'rgba(255, 255, 255, 0.1)',
