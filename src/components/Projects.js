@@ -1,6 +1,5 @@
 import React from 'react';
 import '../styles/projects.css'
-// import github from '../assets/github.svg'
 import { ReactComponent as Github } from '../assets/github.svg'
 import { ReactComponent as Link } from '../assets/externalLink.svg'
 
