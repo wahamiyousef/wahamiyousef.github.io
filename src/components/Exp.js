@@ -1,14 +1,25 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Default from '../assets/default.png';
 
 const Exp = ({ children, photo=Default, time, company, position }) => {
   const [hover, setHover] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
 
   const toggleDrawer = () => {
     setIsOpen(!isOpen);
   };
 
+  // Update screenWidth on window resize
+  useEffect(() => {
+    const handleResize = () => setScreenWidth(window.innerWidth);
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+  console.log(screenWidth);
+  console.log(hover);
+
+  // Styles for the experience item
   const expStyles = {
     display: 'flex',
     justifyContent: 'space-between',
@@ -20,13 +31,18 @@ const Exp = ({ children, photo=Default, time, company, position }) => {
     fontWeight: '500',
     cursor: 'pointer',
     margin: '1rem 0',
-    backgroundColor: hover ? '#141414' : '#1E1E1E',
-    backgroundColor: hover ? 'rgba(255, 255, 255, 0.1)' : 'rgba(50, 50, 50, 0.3)',
-    backdropFilter: hover ? 'blur(10px)' : 'none',
-    transform: hover ? 'translateY(-5px)' : 'translateY(0px)',
+    backgroundColor:
+      screenWidth > 600 && hover
+        ? 'rgba(255, 255, 255, 0.1)'
+        : 'rgba(50, 50, 50, 0.3)', // Hover effect only for screenWidth > 600
+    // backdropFilter: screenWidth > 600 && hover ? 'blur(10px)' : 'none',
+    // transform: screenWidth > 600 && hover ? 'translateY(-5px)' : 'translateY(0px)',
     color: '#DDDDDD',
     padding: '8px',
-    height: '40px',
+    height: 
+      screenWidth > 600
+        ? '40px'
+        : '80px',
     transition: 'background-color 150ms cubic-bezier(0.4, 0, 0.2, 1), backdrop-filter 150ms, transform 300ms',
   };
 
@@ -34,7 +50,6 @@ const Exp = ({ children, photo=Default, time, company, position }) => {
     maxHeight: isOpen ? '200px' : '0',
     overflow: 'hidden',
     transition: 'max-height 300ms ease-in-out',
-    backgroundColor: '#333',
     backgroundColor: 'rgba(255, 255, 255, 0.1)',
     borderRadius: '4px',
     marginTop: '10px',
@@ -47,8 +62,12 @@ const Exp = ({ children, photo=Default, time, company, position }) => {
     <>
       {/* Clickable Exp Div */}
       <div
-        onMouseEnter={() => setHover(true)}
-        onMouseLeave={() => setHover(false)}
+        onMouseEnter={() => {
+          if (screenWidth > 600) setHover(true);
+        }}
+        onMouseLeave={() => {
+          if (screenWidth > 600) setHover(false);
+        }}
         onClick={toggleDrawer}
         style={expStyles}
       >
@@ -65,7 +84,7 @@ const Exp = ({ children, photo=Default, time, company, position }) => {
             <span>{company}</span>
           </div>
         </div>
-        <span>{time}</span>
+        <span style={{textAlign: 'right'}}>{time}</span>
       </div>
 
       {/* Drawer Content (appears below) */}
