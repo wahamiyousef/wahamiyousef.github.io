@@ -47,6 +47,7 @@ const Exp = ({ children, photo=Default, time, company, position }) => {
   };
 
   const drawerStyles = {
+    // !! this removes the animation from 0 -> 200
     //maxHeight: isOpen ? '200px' : '0',
     overflow: 'hidden',
     transition: 'max-height 300ms ease-in-out',
