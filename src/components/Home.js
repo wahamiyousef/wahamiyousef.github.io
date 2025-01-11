@@ -11,7 +11,6 @@ import java from '../assets/java.svg'
 import cpp from '../assets/cpp.svg'
 import js from'../assets/javascript.svg'
 import mysql from '../assets/mysql.png'
-import resume from '../assets/yousefalwahami.pdf'
 import '../styles/home.css'
 
 function Home() {
@@ -35,7 +34,7 @@ function Home() {
         </div>
 
         <div style={{width: '200px'}}>
-          <Button link={resume} target="_blank" variant='resume'>View Resume</Button>
+          <Button link="/yousefalwahami.pdf" target="_blank" variant='resume'>View Resume</Button>
         </div>
         
 

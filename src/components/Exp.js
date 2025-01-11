@@ -16,8 +16,6 @@ const Exp = ({ children, photo=Default, time, company, position }) => {
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
   }, []);
-  console.log(screenWidth);
-  console.log(hover);
 
   // Styles for the experience item
   const expStyles = {
