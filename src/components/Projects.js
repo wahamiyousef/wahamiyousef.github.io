@@ -15,14 +15,21 @@ function Projects() {
     },
     {
       id: 2,
+      title: 'HomeWorthAI',
+      description: 'RAG AI chat bot designed to help Californian fire victims jog their memory about valuable items to help them file insurance claims',
+      stack: "Pinecone (Vector DB for RAG), CLIP, Detectron2 (Vision model from Meta), Python (FastAPI), Vite, TypeScript, Tailwind",
+      github: 'https://github.com/wahamiyousef/HomeWothAI'
+    },
+    {
+      id: 3,
       title: 'Invade Tower Defense',
-      description: 'Tower Defense game using Java utilizing object-oriented programming (OOP), made for Grade 12 FSE',
+      description: 'Tower Defense game using Java utilizing object-oriented programming (OOP)',
       stack: "Java, OOP",
       link: "",
       github: "https://github.com/wahamiyousef/Invade-Tower-Defense"
     },
     {
-      id: 3,
+      id: 4,
       title: 'Creaks',
       description: 'Horror game developed for 2 week game jam with Unity using C#',
       stack: 'Unity, Blender, Photoshop, FL Studio',
