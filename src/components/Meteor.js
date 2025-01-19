@@ -23,7 +23,7 @@ const Meteor = () => {
       left,
       animationDelay,
       animationDuration,
-      marginTop: '100px'
+      marginTop: '0px'
     });
   }, []);
 
