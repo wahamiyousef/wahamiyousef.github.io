@@ -37,13 +37,13 @@ const MeteorShower = () => {
 function App() {
   return (
     <div className='page'> 
-      <div className='background' style={{position: 'fixed', paddingTop: '100px'}}>
+      <div className='background' style={{position: 'fixed', }}>
         <img src={Blob} className='background-img'/> 
         <MeteorShower />
         {/* <img src={Blob} style={{height: '800px'}}/> 
         #98a869 sage green 
         013f26 dark green*/}
-      </div> 
+      </div>
       <div className='main-page'> {/* display: 'flex',  justifyContent: 'space-between', height: '80vh',paddingTop: '96px' */}
 
         <div className='page-content'>

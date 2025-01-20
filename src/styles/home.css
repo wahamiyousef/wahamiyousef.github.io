@@ -1,3 +1,7 @@
+.homePage {
+  padding: 20px;
+}
+
 .techStack {
   display: grid;
   grid-template-columns: 142px 142px 142px 142px;
@@ -24,6 +28,10 @@
 }
 
 @media (max-width: 600px) {
+  .homePage {
+    padding: 0px;
+    max-width: 100%;
+  }
   .techStack {
     display: grid;
     grid-template-columns: 100%;

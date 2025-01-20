@@ -16,7 +16,7 @@ import '../styles/home.css'
 function Home() {
   return (
     <div id='home' style={{marginBottom: '150px'}}>
-      <div style={{padding: '20px'}}>
+      <div className='homePage'>
         <div style={{display: 'flex', justifyContent: 'space-between', paddingBottom: '50px'}}>
           <div>
             <h1>Hello I'm</h1>
