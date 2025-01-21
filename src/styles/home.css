@@ -1,6 +1,11 @@
 .homePage {
   padding: 20px;
 }
+.homeIntro {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 50px;
+}
 
 .techStack {
   display: grid;
@@ -30,7 +35,15 @@
 @media (max-width: 600px) {
   .homePage {
     padding: 0px;
+    padding-top: 50px;
     max-width: 100%;
+  }
+  .homeIntro {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 50px;
+    text-align: center;
+    align-items: center;
   }
   .techStack {
     display: grid;

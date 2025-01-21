@@ -17,7 +17,7 @@ function Home() {
   return (
     <div id='home' style={{marginBottom: '150px'}}>
       <div className='homePage'>
-        <div style={{display: 'flex', justifyContent: 'space-between', paddingBottom: '50px'}}>
+        <div className='homeIntro'>
           <div>
             <h1>Hello I'm</h1>
             <h1>Yousef Al-Wahami</h1>
@@ -33,30 +33,33 @@ function Home() {
           </div>
         </div>
 
-        <div style={{width: '200px'}}>
-          <Button link="/yousefalwahami.pdf" target="_blank" variant='resume'>View Resume</Button>
-        </div>
-        
+        <div className='wrapper'>
+          <div style={{width: '200px'}}>
+            <Button style={{width: '200px'}} link="/yousefalwahami.pdf" target="_blank" variant='resume'>View Resume</Button>
+          </div>
+          
 
-        <div style={{paddingBottom: '30px'}}>
-          <h2>My Tech Stack</h2>
-          <div className='techStack'>
-            <TechCard variant='tech' photo={ts}>TypeScript</TechCard>
-            <TechCard variant='tech' photo={py}>Python</TechCard>
-            <TechCard variant='tech' photo={nodejs}>Node.js</TechCard>
-            <TechCard variant='tech' photo={java}>Java</TechCard>
-            <TechCard variant='tech' photo={cpp}>C/C++</TechCard>
-            <TechCard variant='tech' photo={js}>JavaScript</TechCard>
-            <TechCard variant='tech' photo={mysql}>MySQL</TechCard>
+          <div style={{paddingBottom: '30px'}}>
+            <h2>My Tech Stack</h2>
+            <div className='techStack'>
+              <TechCard variant='tech' photo={ts}>TypeScript</TechCard>
+              <TechCard variant='tech' photo={py}>Python</TechCard>
+              <TechCard variant='tech' photo={nodejs}>Node.js</TechCard>
+              <TechCard variant='tech' photo={java}>Java</TechCard>
+              <TechCard variant='tech' photo={cpp}>C/C++</TechCard>
+              <TechCard variant='tech' photo={js}>JavaScript</TechCard>
+              <TechCard variant='tech' photo={mysql}>MySQL</TechCard>
+            </div>
+          </div>
+
+          <h2 style={{marginTop: '20px'}}>Socials</h2>
+          <div className='socials'>
+            <Button target="_blank" link='https://www.github.com/wahamiyousef' photo={Github} variant='socials'></Button>
+            <Button target="_blank" link='https://www.linkedin.com/in/yousef-al-wahami/' photo={Linkedin} variant='socials'></Button>
+            <Button target="_blank" link='mailto:alwahami.yousef@gmail.com' photo={Email} variant='socials'></Button>
           </div>
         </div>
-
-        <h2 style={{marginTop: '20px'}}>Socials</h2>
-        <div className='socials'>
-          <Button target="_blank" link='https://www.github.com/wahamiyousef' photo={Github} variant='socials'></Button>
-          <Button target="_blank" link='https://www.linkedin.com/in/yousef-al-wahami/' photo={Linkedin} variant='socials'></Button>
-          <Button target="_blank" link='mailto:alwahami.yousef@gmail.com' photo={Email} variant='socials'></Button>
-        </div>
+        
       </div>
     </div>
   )

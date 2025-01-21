@@ -21,6 +21,7 @@ import Meteor from './components/Meteor';
 import Home from './components/Home';
 import Experience from './components/Experience';
 import Projects from './components/Projects';
+import { useEffect, useState } from 'react';
 
 const MeteorShower = () => {
   const meteorCount = 10;
@@ -35,6 +36,15 @@ const MeteorShower = () => {
 };
 
 function App() {
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+
+  // Update screenWidth on window resize
+  useEffect(() => {
+    const handleResize = () => setScreenWidth(window.innerWidth);
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
   return (
     <div className='page'> 
       <div className='background' style={{position: 'fixed', }}>
