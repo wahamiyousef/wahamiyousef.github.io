@@ -63,12 +63,14 @@ body {
   top: 0;
   min-width: 700px;
   height: 50vh;
-  padding-top: 96px;
+  /* padding-top: 96px; */
+  padding-top: 10vh;
 }
 
 .info-content {
   width: 628px;
-  padding-top: 96px;
+  /* padding-top: 96px; */
+  padding-top: 10vh;
 }
 
 .wrapper {
@@ -172,7 +174,7 @@ h1, p, li {
   }
   .info-content {
     width: auto;
-    padding-top: 350px;
+    padding-top: 250px;
   }
   .wrapper {
     display: flex;
