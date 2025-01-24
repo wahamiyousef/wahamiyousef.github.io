@@ -9,6 +9,7 @@ body {
   /* background: linear-gradient(to top right, black 0%, #3e1621) 100%; */
   color: white;
   height: 100vh;
+  overflow-y: scroll;
 }
 .page {
   display: flex;
@@ -150,7 +151,7 @@ h1, p, li {
   background: #718096;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 680px) {
   .background-img {
     height: 100%;
   }
@@ -165,6 +166,7 @@ h1, p, li {
     position: relative;
     min-width: auto;
     padding-top: 0px;
+    padding-bottom: 130px;
   }
   .main-page {
     margin-left: auto;
@@ -199,4 +201,44 @@ h1, p, li {
     */
     background-color: rgba(22, 48, 17, 0);
   }
+}
+
+
+@media (max-width: 1350px) {
+.page-content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 18rem;
+}
+.home-content { 
+  position: relative;
+  min-width: auto;
+  padding-top: 50px;
+}
+.main-page {
+  margin-left: auto;
+  margin-right: auto;
+  gap: 0;
+  max-width: fit-content;
+}
+.card {
+  padding: 20px;
+  border-radius: 5px;
+  transition: all 0.2s ease-in-out;
+}
+.card:hover {
+  /*
+  background-color: rgba(25, 25, 25, 0.4);
+  backdrop-filter: blur(1px);
+  padding: 20px;
+  border: 2px solid #121212;
+  border-radius: 5px;
+  background-color: rgba(22, 48, 17, 0.5);
+  box-shadow: inset 0 1px 0 0 rgba(1, 63, 38, 0.1);
+  filter: drop-shadow(0px 10px 8px rgba(1, 63, 38, 0.2));
+  */
+  background-color: rgba(22, 48, 17, 0);
+}
 }

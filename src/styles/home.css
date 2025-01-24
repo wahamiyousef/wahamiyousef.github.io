@@ -32,7 +32,7 @@
   margin: 10px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 680px) {
   .homePage {
     padding: 0px;
     padding-top: 50px;
