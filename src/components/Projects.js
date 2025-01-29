@@ -18,7 +18,7 @@ function Projects() {
       title: 'HomeWorthAI',
       description: 'RAG AI chat bot designed to help Californian fire victims jog their memory about valuable items to help them file insurance claims',
       stack: "Pinecone (Vector DB for RAG), CLIP, Detectron2 (Vision model from Meta), Python (FastAPI), Vite, TypeScript, Tailwind",
-      github: 'https://github.com/wahamiyousef/HomeWothAI'
+      github: 'https://github.com/wahamiyousef/HomeWorthAI'
     },
     {
       id: 3,
