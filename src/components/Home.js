@@ -35,7 +35,7 @@ function Home() {
 
         <div className='wrapper'>
           <div style={{width: '200px'}}>
-            <Button style={{width: '200px'}} link="/yousefalwahami.pdf" target="_blank" variant='resume'>View Resume</Button>
+            <Button style={{width: '200px'}} link="/alwahami.yousef.pdf" target="_blank" variant='resume'>View Resume</Button>
           </div>
           
 
