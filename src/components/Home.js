@@ -9,7 +9,7 @@ import ts from '../assets/typescript.svg'
 import py from '../assets/python.svg'
 import java from '../assets/java.svg'
 import cpp from '../assets/cpp.svg'
-import c from '../assets/c.svg'
+import c from '../assets/c.png'
 import js from'../assets/javascript.svg'
 import mysql from '../assets/mysql.png'
 import '../styles/home.css'
@@ -40,7 +40,7 @@ function Home() {
           </div>
           
 
-          <div style={{paddingBottom: '30px'}}>
+          <div>
             <h2>My Tech Stack</h2>
             <div className='techStack'>
               <TechCard variant='tech' photo={ts}>TypeScript</TechCard>
@@ -53,7 +53,7 @@ function Home() {
             </div>
           </div>
 
-          <h2 style={{marginTop: '20px'}}>Socials</h2>
+          <h2>Socials</h2>
           <div className='socials'>
             <Button target="_blank" link='https://www.github.com/wahamiyousef' photo={Github} variant='socials'></Button>
             <Button target="_blank" link='https://www.linkedin.com/in/yousef-al-wahami/' photo={Linkedin} variant='socials'></Button>
